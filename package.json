@@ -1,0 +1,29 @@
+{
+  "name": "xero-campus-app",
+  "version": "1.0.0",
+  "description": "Desktop app of Xero Campus.",
+  "main": "main.js",
+  "scripts": {
+    "start": "next dev",
+    "electron": "electron .",
+    "build": "next build"
+  },
+  "author": "Eftakhar Ahmed Arnob",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.2.4",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.xero.campus",
+    "productName": "Xero-Campus",
+    "mac": {
+      "target": "dmg",
+      "icon": "./campus-icon.icns"
+    },
+    "dmg": {
+      "icon": "./campus-icon.icns",
+      "title": "Xero Campus Installer"
+    }
+  }
+}
